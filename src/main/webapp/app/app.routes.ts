@@ -7,12 +7,18 @@ import { errorRoute } from './layouts/error/error.route';
 import HomeComponent from './home/home.component';
 import NavbarComponent from './layouts/navbar/navbar.component';
 import LoginComponent from './login/login.component';
+import ElecUsageCalcComponent from './elec-usage-calc/elec-usage-calc.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
     title: 'home.title',
+  },
+  {
+    path: 'elec-usage-calc',
+    component: ElecUsageCalcComponent,
+    title: 'Electricity Calculator',
   },
   {
     path: '',
