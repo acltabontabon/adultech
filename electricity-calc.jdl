@@ -1,0 +1,17 @@
+entity ServiceProvider {
+    name String
+    unitMeasurement String
+    notes String
+    rate Double
+    type ServiceType
+    lastUpdate Instant
+}
+
+entity Device {
+    name String
+    powerRating Double
+}
+
+enum ServiceType {
+    ELECTRICITY, WATER
+}

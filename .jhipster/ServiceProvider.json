@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20240224040201"
+  },
+  "applications": "*",
+  "entityTableName": "service_provider",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "unitMeasurement",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rate",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "ServiceType",
+      "fieldValues": "ELECTRICITY,WATER"
+    },
+    {
+      "fieldName": "lastUpdate",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "ServiceProvider",
+  "relationships": [],
+  "searchEngine": "no"
+}

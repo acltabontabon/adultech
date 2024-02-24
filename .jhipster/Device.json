@@ -1,0 +1,20 @@
+{
+  "annotations": {
+    "changelogDate": "20240224040301"
+  },
+  "applications": "*",
+  "entityTableName": "device",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "powerRating",
+      "fieldType": "Double"
+    }
+  ],
+  "name": "Device",
+  "relationships": [],
+  "searchEngine": "no"
+}

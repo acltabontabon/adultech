@@ -1,0 +1,54 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (serviceProvider) {
+      <div>
+        <h2 data-cy="serviceProviderDetailsHeading"><span>Service Provider</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span>ID</span></dt>
+          <dd>
+            <span>{{ serviceProvider.id }}</span>
+          </dd>
+          <dt><span>Name</span></dt>
+          <dd>
+            <span>{{ serviceProvider.name }}</span>
+          </dd>
+          <dt><span>Unit Measurement</span></dt>
+          <dd>
+            <span>{{ serviceProvider.unitMeasurement }}</span>
+          </dd>
+          <dt><span>Notes</span></dt>
+          <dd>
+            <span>{{ serviceProvider.notes }}</span>
+          </dd>
+          <dt><span>Rate</span></dt>
+          <dd>
+            <span>{{ serviceProvider.rate }}</span>
+          </dd>
+          <dt><span>Type</span></dt>
+          <dd>
+            <span>{{ serviceProvider.type }}</span>
+          </dd>
+          <dt><span>Last Update</span></dt>
+          <dd>
+            <span>{{ serviceProvider.lastUpdate | formatMediumDatetime }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/service-provider', serviceProvider.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>
